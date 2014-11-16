@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="ShareSource.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShareSource"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10">
+            <TextBlock Text="Share Text Sample" FontSize="25"/>
+            <TextBox Header="Share Title:"  HorizontalAlignment="Left" x:Name="TextBoxTextShareTitle" Width="200"/>
+            <TextBox Header="Description:" HorizontalAlignment="Left" x:Name="TextBoxTextShareDescription" Width="200"/>
+            <TextBox Header="Share Text:" HorizontalAlignment="Left" x:Name="TextBoxTextShareText" Width="200"/>
+            <Button Click="ButtonShareText_Click" Margin="10" Grid.Row="3" Content="Share Text"></Button>
+            <TextBlock Text="Share File With Web Link Sample" FontSize="25"/>
+            <TextBox Header="Share Title:"  HorizontalAlignment="Left" x:Name="TextBoxFileShareTitle" Width="200"/>
+            <TextBox Header="Description:" HorizontalAlignment="Left" x:Name="TextBoxFileShareDescription" Width="200"/>
+            <Image Width="200" HorizontalAlignment="Left" Margin="10" Source="Assets/mslogo.png"/>
+            <Button Click="ButtonShareFile_Click" Margin="10" Grid.Row="3" Content="Share File With Link"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Page>
